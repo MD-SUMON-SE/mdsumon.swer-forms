@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Navigation Practise</title>
+
+
+    <style>
+        #nav-menu{
+            background-color:rgb(75, 224, 38);
+            margin:0 auto;
+            width:500px;
+            height:50px;
+           
+        }
+        #nav-menu ul{
+            
+        }
+        #nav-menu ul li{
+            list-style: none;
+            margin:20px;
+            float:left;
+            
+
+
+        }
+        #nav-menu ul li a{
+            text-decoration:none;
+            font-size:15px;
+            color:rgb(238, 19, 38);
+            cursor:pointer;           
+        }
+        #nav-menu ul li a:hover{
+            text-decoration:underline;
+            color:blue;
+
+        }
+        .div{clear:both;}
+        .fulname:hover{
+            color:red;
+            background:yellowgreen;
+            
+         
+   
+   
+   
+   
+         }
+         .email:hover{
+            color:rgb(181, 242, 229);
+            background:rgb(101, 150, 224);
+   
+   
+   
+   
+         }
+         .para:hover{
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color:red;
+   
+   
+         }
+         .ok1:focus{
+            color:blue;
+            background-color: rgb(227, 241, 27);
+
+         }
+         .ok2:focus{
+            color:blue;
+            background-color: rgb(244, 52, 9);
+
+         }
+
+
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <div id="nav-menu">
+    <ul>
+        <li><a target="blank" href="forms.html">Home</a></li>
+        <li><a href="#">About</a</li>
+        <li><a href="#">Help</a></li>
+        <li><a href="#">Upgrade</a></li>
+        <li><a href="#">Others Link</a></li>
+    </ul>
+    </div><br>
+
+    <div class="div"></div>
+    
+    <div>
+      
+ 
+       <form action="https://formspree.io/f/mgeqgjoz" method="post">
+           <h3 class="para">Form of student info</h3>
+           <div>
+            Fulname:<br>
+               <label for="fullname" required></label>
+               <input  class="fulname" type="text" name="fulname">
+            </div>
+            <div>
+               E-mail:<br>
+               <label for="e-mail"></label>
+               <input  class="email" type="e-mail" name="e-mail" id="e-mail">
+            </div>
+            <div>
+               Password:<br>
+               <label for="password"></label>
+               <input class="fulname" type="password" name="password" id="password">
+            </div>
+            <div>
+               Date of Birth:<br>
+               <label for="dob"></label>
+               <input type="date" name="dob" id="dob">
+            </div>
+            <div>
+               Gender:<b>
+               <label for="gender"></label>
+               <input type="radio" name="gender" id="gender">Male
+               <input type="radio" name="gender" id="gender">Female
+               <input type="radio" name="gender" id="gender">Others
+            </div>
+            <div>
+               
+               <label for="image">Choose your image:</label>
+               <input type="file" name="image" id="image">
+            </div>
+            <div>
+               
+               <label for="religion">Religion:</label>
+               <input  type="checkbox" name="religion" id="religion">Islam
+               <input type="checkbox" name="religion" id="religion">Hindu
+               <input type="checkbox" name="religion" id="religion">Boddo
+            </div>
+            <div>
+              
+               <label for="department"> Department:</label>
+               <select name="department">
+                   <option value="cse">CSE</option>
+                   <option value="eee" selected>EEE</option>
+                   <option value="mba">MBA</option>
+               </select>
+            </div>
+            <div>
+               <label for="messege">Messege</label>
+               <textarea class="fulname" cols="25" rows="15"></textarea>
+            </div>
+            <div>
+               <input class="ok1" type="submit" value="Register">
+               <input class="ok2" type="reset" value="Clear">
+            </div> 
+       </form>
+       <p class="para">Robin is my real best friend.He is very polite person.</p>
+       
+    </div>
+    
+</body>
+</html>
